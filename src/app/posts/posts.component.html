@@ -1,3 +1,14 @@
 <h1>{{ title }}</h1>
-<p>angular in class project</p>
-<h2> post by user {{getUserId()}} </h2>
+<!-- <p>angular in class project</p>
+<h2>post by user {{ getUserId() }}</h2> -->
+
+<!-- structural directive -->
+<!-- <<ul *ngFor="let post of posts">
+  <li>{{ post.title }}</li>
+  <li>{{ post.body }}</li>
+  <li>{{ post.votes }}</li>
+</ul>> -->
+
+<app-post-item *ngFor="let post of posts" [post]="post" (hidePost)="hidePost($event)" (likePost)="like($event)"></app-post-item> <!-- [post]="post" : Use input property binding to pass post data to the child component-->
+
+

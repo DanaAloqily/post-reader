@@ -1,4 +1,4 @@
-export class Post {
+export class Post { //because were using typscript we have to type our data
   id: number;
   title: string;
   body: string;
