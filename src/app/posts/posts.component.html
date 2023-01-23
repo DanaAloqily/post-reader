@@ -10,5 +10,5 @@
 </ul>> -->
 
 <app-post-item *ngFor="let post of posts" [post]="post" (hidePost)="hidePost($event)" (likePost)="like($event)"></app-post-item> <!-- [post]="post" : Use input property binding to pass post data to the child component-->
-
+<app-create-post (addPost)="addPost($event)"></app-create-post>
 

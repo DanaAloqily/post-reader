@@ -1,9 +1,36 @@
-<h3>{{ post.title }}</h3>
-<p>{{ post.body }}</p>
-<h5>{{ post.votes }}</h5>
-<button (click)="upvote(post)">Upvote</button>
-<button (click)="downvote(post)">Downvote</button>
+<div style="margin-bottom: 40px">
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.body }}</p>
+  <h5>{{ post.votes }}</h5>
+  <button
+    class="btn: btn-primary"
+    style="margin-right: 10px"
+    (click)="upvote(post)"
+  >
+    Upvote
+  </button>
+  <button
+    class="btn: btn-primary"
+    style="margin-right: 10px"
+    (click)="downvote(post)"
+  >
+    Downvote
+  </button>
 
-<button (click)="hide(post)">Hide Post</button> <!-- hide sends a signal to the parent of the change -->
-<button (click)="like(post)">Like</button>
-<br>
+  <button
+    class="btn:btn-primary"
+    style="margin-right: 10px"
+    (click)="hide(post)"
+  >
+    Hide Post
+  </button>
+  <!-- hide sends a signal to the parent of the change -->
+  <button
+    class="btn: btn-primary"
+    style="margin-right: 10px"
+    (click)="like(post)"
+  >
+    Like
+  </button>
+  <br />
+</div>
